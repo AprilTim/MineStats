@@ -1,0 +1,38 @@
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  border-bottom: solid 3px var(--succses);
+  border-radius: 4px;
+  font-size: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background: var(--succses);
+    border-color: var(--succses-hover)
+  }
+
+  &.orange {
+    border-color: var(--warning);
+
+    &:hover {
+      color: white;
+      background: var(--warning);
+      border-color: var(--warning-hover)
+    }
+  }
+
+  &.red {
+    border-color: var(--error);
+
+    &:hover {
+      color: white;
+      background: var(--error);
+      border-color: var(--error-hover)
+    }
+  }
+}
